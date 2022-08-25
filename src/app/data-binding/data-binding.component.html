@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="username">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password">
+        <button class="btn btn-primary" type="button" (click)="onClick()">Login</button>
+        <p> {{ loginStatus }} </p>
+    </div></div>
+</div>
