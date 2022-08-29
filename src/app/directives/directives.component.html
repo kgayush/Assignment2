@@ -1,0 +1,19 @@
+<!-- <button
+  class="btn btn-primary"
+  type="button"
+  (click)="showSecret = !showSecret"
+>
+  Display Details
+</button> -->
+<button
+class="btn btn-primary"
+type="button"
+(click)="onToggleDetails()"
+>
+Display Details
+</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>
+
+<div *ngFor="let log of logs; let i = index" [ngStyle]="{'background-color': i > 3 ? 'blue' : 'transparent'}" [ngClass]="{'text-color': i > 3}">
+{{ log }}
+</div>
